@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/contact_item_back"
+    android:id="@+id/mainContentLL"
+    android:layout_marginHorizontal="@dimen/generalPadding"
+    android:layout_marginVertical="@dimen/halfGeneralPadding"
+    >
+
+    <TextView
+        android:id="@+id/contactNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roop Kumar"
+        android:textColor="@color/white"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        />
+    <TextView
+        android:id="@+id/contactPhoneTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9528865314"
+        android:textColor="@color/white"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        />
+
+</LinearLayout>

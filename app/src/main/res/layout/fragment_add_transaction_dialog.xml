@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/generalPadding"
+            android:orientation="vertical"
+            tools:context=".ui.screen.add_transaction.AddTransactionFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/titleText"
+                    android:textStyle="bold"
+                    android:text="@string/user"
+                    />
+
+                <TextView
+                    android:id="@+id/userNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/titleText"
+                    android:layout_marginBottom="@dimen/halfGeneralPadding"
+                    android:text="@string/demo"
+                    />
+
+                <include layout="@layout/horizontal_line_layout" />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/halfGeneralPadding"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_friend" />
+
+                    <ImageView
+                        android:id="@+id/addFriendBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_add" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <include layout="@layout/horizontal_line_layout" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/generalPadding"
+                    android:background="@color/friends_recycler_back"
+                    >
+
+                    <TextView
+                        android:id="@+id/noFriendsTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/onBackground"
+                        android:text="@string/no_friends"
+                        android:layout_centerInParent="true" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/friendsRecyclerView"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical"
+                        android:scrollbarDefaultDelayBeforeFade="500"
+                        android:layout_height="200dp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/horizontal_line_layout" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/paid_by_input_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/paid_by"
+                android:textSize="@dimen/normalText"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/btn_back"
+
+                app:endIconDrawable="@drawable/ic_drop_down"
+                app:endIconMode="custom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:focusable="false">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/paidByEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:clickable="true"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_title"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/btn_back"
+                app:boxStrokeWidthFocused="2dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/titleEditText"
+                    android:maxLines="1"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/amount"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/btn_back"
+                app:boxStrokeWidthFocused="2dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/amountEdittext"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/transaction_exlude_me_tv"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/onBackground"
+                    android:layout_marginStart="@dimen/generalPadding"
+                    android:text="@string/exclude_me"
+                    />
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/excludeMeCheckBox"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/addTransactionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/button_back"
+                android:padding="@dimen/generalPadding"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_transaction"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/normalText"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</layout>

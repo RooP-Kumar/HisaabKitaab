@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="btn_back">@color/primary</color>
+    <color name="friend_box_back">#8E8E8E</color>
+
+    <color name="recyclerViewBack">#D5D5D5</color>
+    <color name="transparent_back">#00FFFFFF</color>
+
+    <color name="status_bar_color">#A044CD</color>
+    <color name="status_bar_color_when_not_sync">#EA6C32</color>
+    <color name="primary">#8021BD</color>
+    <color name="secondary">#cd44b6</color>
+
+
+<!--    Light Theme-->
+    <color name="background">#FFFFFF</color>
+    <color name="onBackground">#000000</color>
+
+    <color name="surface">#DADADA</color>
+    <color name="onSurface">#494949</color>
+    <color name="friends_recycler_back">#E8E8E8</color>
+
+    <color name="my_expense_card_background_color">@color/background</color>
+    <color name="onBackgroundTabIconTint">@color/primary</color>
+
+    <color name="cursor_color">@color/primary</color>
+
+</resources>

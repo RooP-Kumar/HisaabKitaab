@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_color">#000000</color>
+
+    <color name="background">#000000</color>
+    <color name="onBackground">#FFFFFF</color>
+
+    <color name="surface">#2E2E2E</color>
+    <color name="onSurface">#FFFFFF</color>
+
+    <color name="friends_recycler_back">#2C2C2C</color>
+
+    <color name="my_expense_card_background_color">@color/surface</color>
+    <color name="onBackgroundTabIconTint">@color/onBackground</color>
+
+    <color name="cursor_color">@color/white</color>
+</resources>

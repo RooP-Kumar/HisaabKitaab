@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">HisaabKitaab</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rupee">₹ %s</string>
+    <string name="minsRupee">₹ -%s</string>
+
+    <string name="add_transaction">ADD TRANSACTION</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_balance">Balance</string>
+    <string name="menu_transaction">Transaction</string>
+    <string name="total">"Total : "</string>
+    <string name="paid_by">Paid By</string>
+    <string name="include_me">Include Me</string>
+    <string name="hint_title">Title</string>
+    <string name="drop_down_arrow">drop_down_arrow</string>
+    <string name="demo">Roop Kumar</string>
+    <string name="user">User</string>
+    <string name="no_friends">No Friends Selected</string>
+    <string name="exclude_me">Exclude Me</string>
+    <string name="amount">Amount</string>
+    <string name="my_expense">My Expense</string>
+    <string name="setting">Setting</string>
+    <string name="add_my_expense">ADD MY EXPENSE</string>
+    <string name="add_friend">ADD FRIEND</string>
+    <string name="no_items">No Items Added</string>
+    <string name="add_items">Add Itemss</string>
+    <string name="amount_text">Amount</string>
+    <string name="search">Search</string>
+    <string name="syncing">Syncing</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_inc">SIGN IN</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_upc">SIGN UP</string>
+    <string name="do_not_have_an_account">Do not have an account?</string>
+    <string name="phone">Phone</string>
+    <string name="menu_setting">Setting</string>
+    <string name="expense_title_type">%s %s</string>
+</resources>

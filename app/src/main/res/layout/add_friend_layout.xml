@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/friend_box"
+    android:layout_margin="@dimen/normalPadding"
+    android:padding="@dimen/largePadding"
+    android:id="@+id/friendLayoutLL"
+    >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/friendName"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:text="@string/demo" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/add_friend_amount_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_friend_amount"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:textSize="@dimen/normalText"
+                    android:inputType="number"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

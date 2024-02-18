@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="@dimen/generalPadding"
+    android:layout_marginHorizontal="@dimen/generalPadding"
+    android:layout_marginVertical="@dimen/halfGeneralPadding"
+    app:cardElevation="@dimen/halfGeneralPadding"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:paddingHorizontal="@dimen/generalPadding"
+            android:layout_marginTop="@dimen/generalPadding"
+            android:layout_marginBottom="@dimen/halfGeneralPadding"
+            android:id="@+id/transactionTitleTV"
+            android:textSize="@dimen/titleText"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paid_by"
+                android:textSize="@dimen/normalText"
+                android:textColor="@color/onBackground"
+                android:layout_marginHorizontal="@dimen/generalPadding"
+
+                />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/paidByTV"
+                    android:text="@string/paid_by"
+                    android:maxLines="1"
+                    android:textSize="@dimen/normalText"
+                    android:textColor="@color/onBackground"
+                    android:layout_marginHorizontal="@dimen/generalPadding"
+                    />
+
+                <include
+                    layout="@layout/horizontal_line_layout"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/generalPadding"
+            android:layout_marginVertical="@dimen/halfGeneralPadding"
+            android:id="@+id/transactionItemFriendsRV"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="end"
+            android:layout_marginBottom="@dimen/halfGeneralPadding"
+            >
+
+            <include
+                layout="@layout/horizontal_line_layout"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/generalPadding"
+                android:gravity="end"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="@dimen/halfGeneralPadding"
+                    android:layout_marginBottom="@dimen/halfGeneralPadding"
+                    android:text="@string/total"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/normalText"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="textEnd"
+                    android:layout_marginTop="@dimen/halfGeneralPadding"
+                    android:layout_marginBottom="@dimen/halfGeneralPadding"
+                    android:text="@string/rupee"
+                    android:id="@+id/transactionTotalAmountTV"
+                    android:textSize="@dimen/normalText"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

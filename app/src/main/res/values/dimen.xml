@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="generalPadding">16dp</dimen>
+    <dimen name="halfGeneralPadding">8dp</dimen>
+
+    <dimen name="titleText">18sp</dimen>
+    <dimen name="mediumText">16sp</dimen>
+    <dimen name="normalText">14sp</dimen>
+    <dimen name="smallText">12sp</dimen>
+
+    <dimen name="normalPadding">4dp</dimen>
+    <dimen name="mediumPadding">6dp</dimen>
+    <dimen name="largePadding">8dp</dimen>
+
+</resources>

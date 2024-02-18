@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.hisaabkitaab.ui.screen.home.HomeFragment"
+        android:label="Home" >
+        <action
+            android:id="@+id/action_home_to_addTransactionDialogFragment"
+            app:destination="@id/addTransactionDialogFragment"
+            app:popUpTo="@id/home" />
+        <action
+            android:id="@+id/action_home_to_addMyExpenseFragment"
+            app:destination="@id/addMyExpenseFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/my_expense"
+        android:name="com.example.hisaabkitaab.ui.screen.pager.BalanceTabFragment"
+        android:label="My Expense"
+        tools:layout="@layout/fragment_balance_tabl_layout" />
+    <fragment
+        android:id="@+id/addTransactionDialogFragment"
+        android:name="com.example.hisaabkitaab.ui.screen.add_transaction.AddTransactionFragment"
+        android:label="Add Transaction"
+        tools:layout="@layout/fragment_add_transaction_dialog" >
+        <action
+            android:id="@+id/action_addTransactionDialogFragment_to_contactFragment"
+            app:destination="@id/contactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.hisaabkitaab.ui.screen.contact_list.ContactFragment"
+        android:label="Contacts" />
+    <fragment
+        android:id="@+id/addMyExpenseFragment"
+        android:name="com.example.hisaabkitaab.ui.screen.addexpense.AddMyExpenseFragment"
+        android:label="Add Expense" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.hisaabkitaab.ui.screen.setting.SettingFragment"
+        android:label="Setting" />
+
+</navigation>

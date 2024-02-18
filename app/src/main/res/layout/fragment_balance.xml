@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.screen.balance.BalanceFragment">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/empty_bucket_animation"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="@dimen/generalPadding"
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/empty_bucket"
+            app:lottie_repeatMode="restart"
+            android:visibility="gone"
+            app:lottie_autoPlay="true"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/showTransactionsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </RelativeLayout>
+</layout>

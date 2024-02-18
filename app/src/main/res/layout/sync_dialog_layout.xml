@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_background"
+    >
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sync_dialog_layout_progress_bar"
+        android:layout_marginHorizontal="@dimen/generalPadding"
+        android:layout_marginBottom="@dimen/halfGeneralPadding"
+        android:layout_marginTop="@dimen/generalPadding"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/sync_dialog_layout_progress_bar"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/halfGeneralPadding"
+            android:layout_marginBottom="@dimen/generalPadding"
+            android:textAlignment="center"
+            android:id="@+id/sync_dialog_layout_text_view"
+            android:text="@string/syncing"
+            />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieDots"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:lottie_rawRes="@raw/dot_animation"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_repeatMode="restart"
+            android:scaleType="centerInside"
+            />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/sync_dialog_layout_lottie_animation"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:lottie_rawRes="@raw/done_animation"
+        app:lottie_autoPlay="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/generalPadding"
+        />
+
+
+</RelativeLayout>

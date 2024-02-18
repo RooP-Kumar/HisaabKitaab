@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.screen.addexpense.AddMyExpenseFragment"
+        android:orientation="vertical"
+        android:padding="@dimen/generalPadding"
+        android:background="@color/background"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/titleText"
+                android:textStyle="bold"
+                android:text="@string/user"
+                android:textColor="@color/onBackground"
+                />
+
+            <TextView
+                android:id="@+id/add_expense_userNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/titleText"
+                android:layout_marginBottom="@dimen/halfGeneralPadding"
+                android:text="@string/demo"
+                android:textColor="@color/onBackground"
+                />
+
+            <include layout="@layout/horizontal_line_layout" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/halfGeneralPadding"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:textColor="@color/onBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/add_items" />
+
+                <ImageView
+                    android:id="@+id/add_expense_addItemBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_add"
+                    app:tint="@color/onBackground"
+                    />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <include layout="@layout/horizontal_line_layout" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/generalPadding"
+                android:background="@color/surface"
+                >
+
+                <TextView
+                    android:id="@+id/add_expense_noItemsTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/onSurface"
+                    android:text="@string/no_items"
+                    android:layout_centerInParent="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/add_expense_itemsRecyclerView"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical"
+                    android:scrollbarDefaultDelayBeforeFade="500"
+                    android:layout_height="200dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <include layout="@layout/horizontal_line_layout" />
+
+        <RelativeLayout
+            android:id="@+id/add_expense_addExpenseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/halfGeneralPadding"
+            android:gravity="center"
+            android:background="@drawable/button_back"
+            android:padding="@dimen/generalPadding"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_my_expense"
+                android:textColor="@color/background"
+                android:textSize="@dimen/normalText"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

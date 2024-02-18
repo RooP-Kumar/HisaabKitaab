@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/halfGeneralPadding"
+    android:layout_marginHorizontal="@dimen/generalPadding"
+    android:layout_marginVertical="@dimen/halfGeneralPadding"
+    android:orientation="horizontal"
+    >
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Samosa"
+        android:id="@+id/add_expense_item_list_title"
+        android:textSize="@dimen/normalText"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rupee"
+        android:id="@+id/add_expense_item_list_amount"
+        android:textSize="@dimen/normalText"
+        />
+
+</LinearLayout>
